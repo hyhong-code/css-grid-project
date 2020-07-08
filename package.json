@@ -1,0 +1,25 @@
+{
+  "name": "css-grid-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node-sass -w scss/ -o css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyhong-code/css-grid-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hyhong-code/css-grid-project/issues"
+  },
+  "homepage": "https://github.com/hyhong-code/css-grid-project#readme"
+}
