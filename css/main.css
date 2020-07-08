@@ -1,0 +1,90 @@
+html {
+  font-size: 62.5%; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: 300;
+  background-color: #ccc;
+  padding: 3rem 5rem; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 2.5rem; }
+
+img {
+  max-width: 100%; }
+
+.wrapper {
+  display: grid;
+  grid-gap: 2rem; }
+  .wrapper .main-nav ul {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(4, 1fr); }
+  .wrapper .main-nav a {
+    background: #ddd;
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 1.9rem;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    transition: all 0.2s ease-out; }
+    .wrapper .main-nav a:hover {
+      color: #ddd;
+      background: #333; }
+  .wrapper .top-container {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-areas: "showcase showcase top-box-a" "showcase showcase top-box-b"; }
+    .wrapper .top-container .showcase {
+      grid-area: showcase;
+      min-height: 60rem;
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://image.ibb.co/kYJK8x/showcase.jpg);
+      background-size: cover;
+      background-position: center;
+      padding: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8); }
+      .wrapper .top-container .showcase h1 {
+        font-size: 6rem;
+        color: #fff; }
+      .wrapper .top-container .showcase p {
+        font-size: 2rem;
+        color: #fff;
+        margin-bottom: 3rem; }
+    .wrapper .top-container .top-box {
+      background: #ddd;
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+      padding: 2.5rem; }
+      .wrapper .top-container .top-box .price {
+        font-size: 3.5rem; }
+    .wrapper .top-container .top-box-a {
+      grid-area: top-box-a; }
+    .wrapper .top-container .top-box-b {
+      grid-area: top-box-b; }
